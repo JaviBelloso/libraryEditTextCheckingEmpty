@@ -1,4 +1,4 @@
-package com.example.libraryedittextckecking;
+package com.javibelloso.libraryedittextckeckingempty;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

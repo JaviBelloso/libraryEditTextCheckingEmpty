@@ -1,4 +1,4 @@
-package com.example.edittextchecking;
+package com.javibelloso.edittextchecking;
 
 import android.annotation.SuppressLint;
 
