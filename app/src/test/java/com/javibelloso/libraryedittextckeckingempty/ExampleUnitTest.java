@@ -1,4 +1,4 @@
-package com.example.edittextchecking;
+package com.javibelloso.libraryedittextckeckingempty;
 
 import org.junit.Test;
 

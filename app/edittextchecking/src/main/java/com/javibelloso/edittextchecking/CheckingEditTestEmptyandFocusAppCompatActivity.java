@@ -1,24 +1,24 @@
-package com.example.edittextchecking;
+package com.javibelloso.edittextchecking;
 
-import android.app.Activity;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
-import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.Toast;
-import java.util.ArrayList;
 
+import java.util.ArrayList;
 
 /**
  * @author Javi Belloso
- * The type Checking edit test emptyand focus activity.
+ * The type Checking edit test emptyand focus app compat activity.
  */
-public abstract class CheckingEditTestEmptyandFocusActivity extends Activity {
+public abstract class CheckingEditTestEmptyandFocusAppCompatActivity extends AppCompatActivity {
 
     private ViewGroup viewById;
     private ArrayList<EditText> array;
@@ -48,6 +48,7 @@ public abstract class CheckingEditTestEmptyandFocusActivity extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
     }
 
@@ -91,16 +92,9 @@ public abstract class CheckingEditTestEmptyandFocusActivity extends Activity {
                 findAllEditTexts((ViewGroup) view, editTextsException);
             else if (view instanceof EditText) {
                 EditText editText = (EditText) view;
-                if(editTextsException!=null){
-                    if(editText.getText().toString().equals("") && !editTextsException.contains(editText)) {
-                        array.add(editText);
-                    }
-                }else{
-                    if(editText.getText().toString().equals("")) {
-                        array.add(editText);
-                    }
+                if(editText.getText().toString().equals("") && !editTextsException.contains(editText)) {
+                    array.add(editText);
                 }
-
 
             }
 
@@ -113,6 +107,7 @@ public abstract class CheckingEditTestEmptyandFocusActivity extends Activity {
     }
 
 }
+
 
 
 
