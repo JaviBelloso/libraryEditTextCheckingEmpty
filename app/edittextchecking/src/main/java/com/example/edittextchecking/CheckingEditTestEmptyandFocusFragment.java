@@ -19,6 +19,7 @@ import java.util.ArrayList;
 
 
 /**
+ * @author Javi Belloso
  * A simple {@link Fragment} subclass.
  */
 abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
@@ -28,15 +29,30 @@ abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
     private View editTextEmpty;
 
 
+    /**
+     * Gets edit text empty.
+     *
+     * @param editTextsException the edit texts exception
+     * @param messageToast       the message toast
+     * @return the edit text empty
+     */
     public View getEditTextEmpty(ArrayList<EditText> editTextsException, String messageToast) {
         array = new ArrayList<>();
         return StartCkecking(editTextsException,messageToast);
     }
 
+    /**
+     * Sets edit text empty.
+     *
+     * @param editTextEmpty the edit text empty
+     */
     public void setEditTextEmpty(View editTextEmpty) {
         this.editTextEmpty = editTextEmpty;
     }
 
+    /**
+     * Instantiates a new Checking edit test emptyand focus fragment.
+     */
     public CheckingEditTestEmptyandFocusFragment() {
         // Required empty public constructor
     }

@@ -14,17 +14,33 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+/**
+ * @author Javi Belloso
+ * The type Checking edit test emptyand focus app compat activity.
+ */
 public abstract class CheckingEditTestEmptyandFocusAppCompatActivity extends AppCompatActivity {
 
     private ViewGroup viewById;
     private ArrayList<EditText> array;
     private View editTextEmpty;
 
+    /**
+     * Gets edit text empty.
+     *
+     * @param editTextsException the edit texts exception
+     * @param messageToast       the message toast
+     * @return the edit text empty
+     */
     public View getEditTextEmpty(ArrayList<EditText> editTextsException, String messageToast) {
         array = new ArrayList<>();
         return StartCkecking(editTextsException,messageToast);
     }
 
+    /**
+     * Sets edit text empty.
+     *
+     * @param editTextEmpty the edit text empty
+     */
     public void setEditTextEmpty(View editTextEmpty) {
         this.editTextEmpty = editTextEmpty;
     }
