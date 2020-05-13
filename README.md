@@ -9,7 +9,9 @@ Implementacion.
 Extendemos de la clase correspondiente donde se carga el layout:
 
   extends CheckingEditTestEmptyandFocusAppCompatActivity
+  
   extends CheckingEditTestEmptyandFocusActivity
+  
   extends CheckingEditTestEmptyandFocusFragment
   
   En el lugar de comprobacion(Button,etc...)
