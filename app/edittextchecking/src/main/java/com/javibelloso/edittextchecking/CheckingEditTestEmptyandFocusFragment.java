@@ -25,7 +25,7 @@ import java.util.ArrayList;
  */
 public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
 
-    private ViewGroup viewById;
+    private ViewGroup viewGroup;
     private ArrayList<EditText> array;
     private View editTextEmpty;
 
@@ -56,17 +56,17 @@ public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
      *
      * @return the view by id
      */
-    public ViewGroup getViewById() {
-        return viewById;
+    public ViewGroup getViewGroup() {
+        return viewGroup;
     }
 
     /**
      * Sets view by id.
      *
-     * @param viewById the view by id
+     * @param viewGroup the view by id
      */
-    public void setViewById(ViewGroup viewById) {
-        this.viewById = viewById;
+    public void setViewGroup(ViewGroup viewGroup) {
+        this.viewGroup = viewGroup;
     }
 
     /**
@@ -83,14 +83,14 @@ public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View inflate = inflater.inflate(android.R.id.content, container, false);
-        viewById = (ViewGroup) inflate.findViewById(android.R.id.content);
+        viewGroup = (ViewGroup) inflate.findViewById(android.R.id.content);
         return inflate;
     }
 
     private View StartCkecking(ArrayList<EditText> editTextsException, String messageToast) {
         if(messageToast.equals(""))
             messageToast="Fill this field!";
-        editTextEmpty= findAllEditTexts(viewById,editTextsException);
+        editTextEmpty= findAllEditTexts(viewGroup,editTextsException);
         if (editTextEmpty != null) {
             editTextEmpty.requestFocus();
             final Drawable backgroundOriginal = editTextEmpty.getBackground();
