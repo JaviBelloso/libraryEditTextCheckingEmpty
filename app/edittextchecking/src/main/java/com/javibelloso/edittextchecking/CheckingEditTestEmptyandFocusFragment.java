@@ -19,8 +19,9 @@ import java.util.ArrayList;
 
 
 /**
- * @author Javi Belloso
- * A simple {@link Fragment} subclass.
+ * The type Checking edit test emptyand focus fragment.
+ *
+ * @author Javi Belloso A simple {@link Fragment} subclass.
  */
 public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
 
@@ -48,6 +49,24 @@ public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
      */
     public void setEditTextEmpty(View editTextEmpty) {
         this.editTextEmpty = editTextEmpty;
+    }
+
+    /**
+     * Gets view by id.
+     *
+     * @return the view by id
+     */
+    public ViewGroup getViewById() {
+        return viewById;
+    }
+
+    /**
+     * Sets view by id.
+     *
+     * @param viewById the view by id
+     */
+    public void setViewById(ViewGroup viewById) {
+        this.viewById = viewById;
     }
 
     /**
