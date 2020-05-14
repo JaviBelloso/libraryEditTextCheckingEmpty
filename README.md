@@ -15,7 +15,7 @@ allprojects {
 
 
 dependencies {
-	        implementation 'com.github.JaviBelloso:libraryEditTextCheckingEmpty:-SNAPSHOT'
+	        implementation 'com.github.JaviBelloso:libraryEditTextCheckingEmpty:Release'
 	}
 
 
