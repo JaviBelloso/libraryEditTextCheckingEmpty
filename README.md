@@ -48,4 +48,5 @@ Extendemos de la clase correspondiente donde se carga el layout:
         // edittextvacio
      }
      
-   
+   Javadoc page web:
+   https://github.com/JaviBelloso/libraryEditTextCheckingEmpty
