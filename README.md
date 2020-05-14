@@ -15,7 +15,7 @@ allprojects {
 
 
 dependencies {
-	        implementation 'com.github.JaviBelloso:libraryEditTextCheckingEmpty:-SNAPSHOT'
+	        implementation 'com.github.JaviBelloso:libraryEditTextCheckingEmpty:Release'
 	}
 
 
@@ -35,7 +35,11 @@ Extendemos de la clase correspondiente donde se carga el layout:
     ArrayList<EditText> listExceptions = new ArrayList<>();   // lista de Excepciones
     listExceptions.add(myEditTextExcetion1);
     String messageToast = "rellena este campo";
+    // solo para Fragment
+    // setViewGroup((ViewGroup)getView());
+    //-----------------
      EditText edittextvacio= getEditTextEmpty(listExceptions,"");
+     
      if(edittextvacio==null){
         // do something
         // Todos los campos edittext esta rellenos, no existe ninguno "";
