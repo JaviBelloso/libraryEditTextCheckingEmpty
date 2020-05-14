@@ -22,7 +22,7 @@ import java.util.ArrayList;
  * @author Javi Belloso
  * A simple {@link Fragment} subclass.
  */
-abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
+public abstract class CheckingEditTestEmptyandFocusFragment extends Fragment {
 
     private ViewGroup viewById;
     private ArrayList<EditText> array;
