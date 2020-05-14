@@ -4,6 +4,21 @@ Libreria Android de Extension para Activity, Appcompat y Fragment, de comprobaci
 Libreria de Extension de Activitys y fragment para el checking de Views inputText vacios. Realiza el Focus sobre el primero que encuentra.
 Incluye posibilidad de lista de Edittext para no hacer el checking sobre ellos, y un mensaje personalizado para el Toast emergente.
 
+Gradle
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+
+dependencies {
+	        implementation 'com.github.JaviBelloso:libraryEditTextCheckingEmpty:-SNAPSHOT'
+	}
+
+
 Implementacion.
 
 Extendemos de la clase correspondiente donde se carga el layout:
