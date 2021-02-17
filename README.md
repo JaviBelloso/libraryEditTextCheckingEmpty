@@ -38,7 +38,7 @@ Extendemos de la clase correspondiente donde se carga el layout:
     // solo para Fragment
     // setViewGroup((ViewGroup)getView());
     //-----------------
-     EditText edittextvacio= getEditTextEmpty(listExceptions,"");
+     EditText edittextvacio= getEditTextEmpty(listExceptions,messageToast);
      
      if(edittextvacio==null){
         // do something
